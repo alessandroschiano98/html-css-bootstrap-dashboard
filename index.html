@@ -22,55 +22,127 @@
 <!-- aggiungere text-bg-colore per applicare il colore del testo-->
 
 <body>
+    <!-- BANNER -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- LOGO -->
             <img class="col-md-1 row" src="./img/duck.png" alt="LOGO">
+            <!-- CATEGORIE -->
             <a class="navbar-brand" href="#">Catalogo Libri</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                
-             
-          </nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+        </nav>
     </header>
+    <!-- FINE BANNER-->
+     <!-- CARDS-->
     <main>
         <div class="container">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Catalogo Libri</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Catalogo Libri</h5>
+                        <a href="#" class="btn btn-primary">Aggiungi Libro</a>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Data Prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">I pilastri della Terra</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">I promessi sposi</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Il signore degli anelli</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Harry Potter e la pietra filosofale</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Il Codice Da Vinci</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Shining</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">La divina commedia</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Il trono di spade</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Il mondo di Sofia</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Il piccolo principe</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">La storia infinita</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </div>
 
 
