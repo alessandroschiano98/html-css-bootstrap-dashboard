@@ -49,22 +49,22 @@
                 <h1 class="card-title">Nuovo Libro</h1>
             </div>
             <!-- NOME AUTORE + COGNOME AUTORE -->
-           <div class="firstline d-flex col-12">
-             <!-- NOME AUTORE-->
-             <div class="nome-autore col-6 my-2">
-                <label for="nome-autore">Nome Autore</label>
-                <div class="cognome-autore col-12 my-2">
-                    <input type="text" id="nome-autore" placeholder="Inserisci nome autore">
+            <div class="firstline d-flex col-12">
+                <!-- NOME AUTORE-->
+                <div class="nome-autore col-6 my-2">
+                    <label for="nome-autore">Nome Autore</label>
+                    <div class="cognome-autore col-12 my-2">
+                        <input type="text" id="nome-autore" placeholder="Inserisci nome autore">
+                    </div>
+                </div>
+                <!-- COGNOME AUTORE -->
+                <div class="cognome-autore col-6 m y-2">
+                    <label for="cognome-autore">Cognome Autore</label>
+                    <div class="cognome-autore col-6 my-2">
+                        <input type="text" id="cognome-autore" placeholder="Inserisci cognome autore">
+                    </div>
                 </div>
             </div>
-            <!-- COGNOME AUTORE -->
-            <div class="cognome-autore col-6 m y-2">
-                <label for="cognome-autore">Cognome Autore</label>
-                <div class="cognome-autore col-6 my-2">
-                    <input type="text" id="cognome-autore" placeholder="Inserisci cognome autore">
-                </div>
-            </div>
-           </div>
 
             <!-- TITOLO DEL LIBRO -->
             <div class="col-12 my-2">
@@ -74,48 +74,54 @@
                 <input type="text" id="titolo" placeholder="Inserisci il titolo del libro">
                 <p class="text-secondary py-1">Titolo versione italiana</p>
             </div>
-            
+
             <!-- FINE PAGINA CON VARIE BOX -->
             <!-- GENERE / ANNO DI PUBBLICAZIONE / CODICE ISBN -->
-           <div class="secondline d-flex col-12">
-             <!-- GENERE -->
-             <div class="genere-libro col-4 my-2">
-                <label for="genere-libro">Genere</label>
+            <div class="secondline d-flex col-12">
+                <!-- GENERE -->
                 <div class="genere-libro col-4 my-2">
-                    <select id="genere-libro">
-                        <option value="generelibro">Scegli il genere</option>
-                    </select>
+                    <label for="genere-libro">Genere</label>
+                    <div class="label-genere-libro col-4 my-2">
+                        <select id="genere-libro">
+                            <option value="generelibro">Scegli il genere</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- ANNO DI PUBBLICAZIONE -->
+                <div class="anno-pubbl col-4 my-2">
+                    <label for="anno-pubbl">Anno di Pubblicazione</label>
+                    <div class="input col-12">
+                        <div class="anno-pubbl col-6 my-2">
+                            <input type="text" id="anno-pubbl" placeholder="Inserisci l'anno di pubblicazione">
+                        </div>
+                    </div>
+                </div>
+                <!-- CODICE ISBN -->
+                <div class="codice-isbn col-4 my-2">
+                    <label for="isbn">#ISBN</label>
+                    <div class="isbn col-6 my-2">
+                        <input type="text" id="isbn" placeholder="Inserisci il codice #ISBN">
+                    </div>
                 </div>
             </div>
-            <!-- ANNO DI PUBBLICAZIONE -->
-            <div class="anno-pubbl col-4 my-2">
-                <label for="anno-pubbl">Anno di Pubblicazione</label>
-                <div class="anno-pubbl col-6 my-2">
-                    <input type="text" id="anno-pubbl" placeholder="Inserisci l'anno di pubblicazione">
-                </div>
-            </div>
-            <!-- CODICE ISBN -->
-            <div class="codice-isbn col-4 my-2">
-                <label for="isbn">#ISBN</label>
-                <div class="isbn col-6 my-2">
-                    <input type="text" id="isbn" placeholder="Inserisci il codice #ISBN">
-                </div>
-            </div>
-           </div>
             <!-- FINE GENERE / ANNO PUBBLICAZIONE /ISBN -->
             <!-- RIGA DIVISORIA-->
             <hr>
             <!-- RIGA DIVISORIA-->
             <!-- NOTE -->
+
             <p>Note</p>
             <textarea rows="5" cols="174" placeholder="Inserisci eventuali note sul libro"></textarea>
             <!-- DISPONIBILE ANCHE IN DIGITALE -->
-            <input type="checkbox" class="avaialable-checkbox" id="disponibile">
-            <label class="avaialable-checkbox" for="disponibile">Disponibile anche in digitale</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="disponibile" value="disponibile">
+                <label class="form-check-label" for="disponibile">Disponibile anche in digitale </label>
+              </div>
             <!-- AGGIUNGI LIBRO -->
             <div class="py-3">
                 <a href="#" class="library btn btn-primary  ">Aggiungi Libro</a>
             </div>
+            <!-- FINE NOTE -->
         </div>
     </main>
 
