@@ -15,6 +15,7 @@
 
 <body>
     <!-- BANNER -->
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
             <!-- LOGO -->
@@ -40,80 +41,59 @@
             </div>
         </nav>
     </header>
+    <!-- MAIN -->
     <main>
         <!-- PAGINA CON VARIE BOX -->
-        <!-- PARTE PRIMARIA -->
         <div class="container py-2">
-            <div class="card-body">
-                <div class="firstline d-flex justify-content-between py-3">
-                    <h1 class="card-title">Nuovo Libro</h1>
-                </div>
+            <div class="firstline d-flex justify-content-between py-3">
+                <h1 class="card-title">Nuovo Libro</h1>
             </div>
             <!-- NOME AUTORE -->
-            <div class="container2 d-flex">
-                <div class="nome-autore col-6 my-2">
-                    <form action="">
-                        <label for="nome-autore">Nome Autore</label>
-                        <div class="cognome-autore col-12 my-2">
-                            <input type="text" id="nome-autore" placeholder="Inserisci nome autore">
-                        </div>
-                    </form>
+            <div class="nome-autore col-6 my-2">
+                <label for="nome-autore">Nome Autore</label>
+                <div class="cognome-autore col-12 my-2">
+                    <input type="text" id="nome-autore" placeholder="Inserisci nome autore">
                 </div>
-                <!-- COGNOME AUTORE -->
+            </div>
+            <!-- COGNOME AUTORE -->
+            <div class="cognome-autore col-6 my-2">
+                <label for="cognome-autore">Cognome Autore</label>
                 <div class="cognome-autore col-6 my-2">
-                    <form action="">
-                        <label for="cognome-autore">Cognome Autore</label>
-                        <div class="cognome-autore col-6 my-2">
-                            <input type="text" id="cognome-autore" placeholder="Inserisci cognome autore">
-                        </div>
-                    </form>
+                    <input type="text" id="cognome-autore" placeholder="Inserisci cognome autore">
                 </div>
             </div>
-            <!-- TITOLO DEL LIBRO -->
-            <div class="container3">
-                <form action="">
-                    <div class="col-12 my-2">
-                        <label for="titolo">Titolo</label>
-                    </div>
-                    <div class="col-12 my-2">
-                        <input type="text" id="titolo" placeholder="Inserisci il titolo del libro">
-                    </div>
-                </form>
-                <p class="text-secondary">Titolo versione italiana</p>
-            </div>
 
-            <!-- FINE PAGINA CON VARIE BOX -->
-            <!-- GENERE / ANNO DI PUBBLICAZIONE / CODICE ISBN -->
-
-            <!-- GENERE -->
-            <div class="container2 d-flex">
-                <div class="genere-libro col-4 my-2">
-                    <form action="">
-                        <label for="genere-libro">Genere</label>
-                        <div class="genere-libro col-6 my-2">
-                            <select id="genere-libro">
-                                <option value="generelibro">Scegli il genere</option>
-                            </select>
-                    </form>
-                </div>
+        <!-- TITOLO DEL LIBRO -->
+        <div class="col-12 my-2">
+            <label for="titolo">Titolo</label>
+        </div>
+        <div class="col-12 my-2">
+            <input type="text" id="titolo" placeholder="Inserisci il titolo del libro">
+        </div>
+        <p class="text-secondary">Titolo versione italiana</p>
+        <!-- FINE PAGINA CON VARIE BOX -->
+        <!-- GENERE / ANNO DI PUBBLICAZIONE / CODICE ISBN -->
+        <!-- GENERE -->
+        <div class="genere-libro col-4 my-2">
+            <label for="genere-libro">Genere</label>
+            <div class="genere-libro col-6 my-2">
+                <select id="genere-libro">
+                    <option value="generelibro">Scegli il genere</option>
+                </select>
             </div>
-            <!-- ANNO DI PUBBLICAZIONE -->
-            <div class="anno-pubbl col-4 my-2">
-                <form action="">
-                    <label for="anno-pubbl">Anno di Pubblicazione</label>
-                    <div class="anno-pubbl col-6 my-2">
-                        <input type="text" id="anno-pubbl" placeholder="Inserisci l'anno di pubblicazione">
-                    </div>
-                </form>
+        </div>
+        <!-- ANNO DI PUBBLICAZIONE -->
+        <div class="anno-pubbl col-4 my-2">
+            <label for="anno-pubbl">Anno di Pubblicazione</label>
+            <div class="anno-pubbl col-6 my-2">
+                <input type="text" id="anno-pubbl" placeholder="Inserisci l'anno di pubblicazione">
             </div>
-            <!-- CODICE ISBN -->
-            <div class="codice-isbn col-4 my-2">
-                <form action="">
-                    <label for="isbn">#ISBN</label>
-                    <div class="isbn col-6 my-2">
-                        <input type="text" id="isbn" placeholder="Inserisci il codice #ISBN">
-                    </div>
-                </form>
+        </div>
+        <!-- CODICE ISBN -->
+        <div class="codice-isbn col-4 my-2">
+            <label for="isbn">#ISBN</label>
+            <div class="isbn col-6 my-2">
+                <input type="text" id="isbn" placeholder="Inserisci il codice #ISBN">
             </div>
         </div>
         <!-- FINE GENERE / ANNO PUBBLICAZIONE /ISBN -->
@@ -121,26 +101,16 @@
         <hr>
         <!-- RIGA DIVISORIA-->
         <!-- NOTE -->
-        <div class="container3">
-            <p>Note</p>
-            <textarea rows="5" cols="174" placeholder="Inserisci eventuali note sul libro"></textarea>
-        </div>
+        <p>Note</p>
+        <textarea rows="5" cols="174" placeholder="Inserisci eventuali note sul libro"></textarea>
         <!-- DISPONIBILE ANCHE IN DIGITALE -->
-        <div>
-            <form action="">
-                <input type="checkbox" class="avaialable-checkbox" id="disponibile">
-                <label class="avaialable-checkbox" for="disponibile">Disponibile anche in digitale</label>
-            </form>
-
-        </div>
-        </div>
+        <input type="checkbox" class="avaialable-checkbox" id="disponibile">
+        <label class="avaialable-checkbox" for="disponibile">Disponibile anche in digitale</label>
         <!-- AGGIUNGI LIBRO -->
-        <div class="container">
-            <div class="py-3">
-                <a href="#" class="library btn btn-primary  ">Aggiungi Libro</a>
-            </div>
+        <div class="py-3">
+            <a href="#" class="library btn btn-primary  ">Aggiungi Libro</a>
         </div>
-
+        </div>
     </main>
 
 
