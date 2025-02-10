@@ -14,38 +14,32 @@
 </head>
 
 <body>
-
-
-
+    <!-- BANNER -->
     <header>
-        <!-- BANNER -->
-        <header>
-            <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
-                <!-- LOGO -->
-                <img class="col-1 px-1" src="./img copy/duck.png" alt="LOGO" style="width:45px">
-                <!-- CATALOGO -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Catalogo Libri </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Anagrafica Utenti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Storico Prestiti</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Help
-                            </a>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
+            <!-- LOGO -->
+            <img class="col-1 px-1" src="./imgcopy/duck.png" alt="LOGO" style="width:45px">
+            <!-- CATALOGO -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Catalogo Libri </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                </ul>
+            </div>
+        </nav>
     </header>
-
     <main>
         <!-- PAGINA CON VARIE BOX -->
         <!-- PARTE PRIMARIA -->
@@ -55,15 +49,17 @@
                     <h1 class="card-title">Nuovo Libro</h1>
                 </div>
             </div>
-            <!-- NOME E COGNOME AUTORE -->
+            <!-- NOME AUTORE -->
             <div class="container2 d-flex">
                 <div class="nome-autore col-6 my-2">
                     <form action="">
                         <label for="nome-autore">Nome Autore</label>
-                        <div class="cognome-autore col-6 my-2"><input type="text" id="nome-autore"
-                                placeholder="Inserisci nome autore"></div>
+                        <div class="cognome-autore col-12 my-2">
+                            <input type="text" id="nome-autore" placeholder="Inserisci nome autore">
+                        </div>
+                    </form>
                 </div>
-                </form>
+                <!-- COGNOME AUTORE -->
                 <div class="cognome-autore col-6 my-2">
                     <form action="">
                         <label for="cognome-autore">Cognome Autore</label>
