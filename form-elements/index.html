@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
             <!-- LOGO -->
-            <img class="col-1 px-1" src="./imgcopy/duck.png" alt="LOGO" style="width:45px">
+            <img class="col-1 px-3" src="./imgcopy/duck.png" alt="LOGO" style="width:115px">
             <!-- CATALOGO -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -42,9 +42,9 @@
         </nav>
     </header>
     <!-- MAIN -->
-    <main class="px-">
+    <main>
         <!-- PAGINA CON VARIE BOX -->
-        <div class="container py-2">
+        <div class="container px-4 py-3">
             <div class="firstline d-flex justify-content-between py-3">
                 <h1 class="card-title">Nuovo Libro</h1>
             </div>
@@ -61,7 +61,8 @@
                 <div class="cognome-autore col-6 my-2">
                     <label for="cognome-autore">Cognome Autore</label>
                     <div class="cognome-autore col-12 my-2">
-                        <input type="text" id="cognome-autore" placeholder="Inserisci cognome autore" class="form-control">
+                        <input type="text" id="cognome-autore" placeholder="Inserisci cognome autore"
+                            class="form-control">
                     </div>
                 </div>
             </div>
@@ -79,20 +80,25 @@
             <!-- GENERE / ANNO DI PUBBLICAZIONE / CODICE ISBN -->
             <div class="secondline d-flex col-12">
                 <!-- GENERE -->
-                <div class="genere-libro col-4 my-2">
-                    <label for="genere-libro">Genere</label>
-                    <div class="label-genere-libro col-4 my-2" style="width: 95%;">
-                        <select id="genere-libro" class="form-control">
-                            <option value="genere-libro" >Scegli il genere</option>
+                <div class="genere-libro col-4 my-2 ">
+                        <label for="genere-libro">Genere</label>
+                    <div class="label-genere-libro col-4 my-2 " style="width: 95%;">
+                        <select id="genere-libro" class="form-control " >
+                            <option selected="genere-libro">Scegli il genere</option>
+                            <option value="genere-libro">Romantico</option>
+                            <option value="genere-libro">Giallo</option>
+                            <option value="genere-libro">Biografia</option>
                         </select>
                     </div>
+
                 </div>
                 <!-- ANNO DI PUBBLICAZIONE -->
                 <div class="anno-pubbl col-4 my-2">
                     <label for="anno-pubbl">Anno di Pubblicazione</label>
                     <div class="input col-12">
                         <div class="anno-pubbl col-6 my-2" style="width: 95%;">
-                            <input type="text" id="anno-pubbl" placeholder="Inserisci l'anno di pubblicazione" class="form-control">
+                            <input type="text" id="anno-pubbl" placeholder="Inserisci l'anno di pubblicazione"
+                                class="form-control">
                         </div>
                     </div>
                 </div>
@@ -111,12 +117,13 @@
             <!-- NOTE -->
 
             <p>Note</p>
-            <textarea rows="5" cols="174" placeholder="Inserisci eventuali note sul libro" class="form-control py-2"></textarea>
+            <textarea rows="5" cols="174" placeholder="Inserisci eventuali note sul libro"
+                class="form-control py-2"></textarea>
             <!-- DISPONIBILE ANCHE IN DIGITALE -->
             <div class="form-check form-check-inline py-2">
                 <input class="form-check-input" type="checkbox" id="disponibile" value="disponibile">
                 <label class="form-check-label" for="disponibile">Disponibile anche in digitale </label>
-              </div>
+            </div>
             <!-- AGGIUNGI LIBRO -->
             <div class="py-2">
                 <a href="#" class="library btn btn-primary  ">Aggiungi Libro</a>
